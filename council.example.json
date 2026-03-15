@@ -1,0 +1,35 @@
+{
+  "providers": {
+    "claude": {
+      "command": "claude",
+      "args": ["-p", "{prompt}"],
+      "label": "Claude",
+      "stdin": "ignore"
+    },
+    "codex": {
+      "command": "codex",
+      "args": ["exec", "--skip-git-repo-check", "{prompt}"],
+      "label": "Codex",
+      "stdin": "pipe"
+    },
+    "gemini": {
+      "command": "gemini",
+      "args": ["-p", "{prompt}"],
+      "label": "Gemini",
+      "stdin": "pipe"
+    }
+  },
+  "compilerPrompt": {
+    "preamble": "The user asked the following question:",
+    "responsesIntro": "Below are several independent responses from different AI systems.\nThey are anonymized.",
+    "instructionsHeader": "Compile a single final response:",
+    "instructions": [
+      "Remove duplicates.",
+      "Pick the strongest ideas.",
+      "If there are contradictions, resolve them or explicitly note them.",
+      "Make the result clear and coherent.",
+      "Do not mention A/B/C in the final text.",
+      "Respond in the same language as the user's original question."
+    ]
+  }
+}
