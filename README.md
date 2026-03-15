@@ -22,7 +22,7 @@
 
 AI Council sends your prompt to **any number of AI systems** in parallel, collects their responses, and asks a compiler AI to synthesize one unified answer — picking the best ideas, resolving contradictions, and removing duplicates.
 
-Configure for Claude, Codex, and Gemini out of the box — but you can add any CLI-based AI (Grok, Ollama, local models) in one line of config.
+Configured for Claude, Codex, and Gemini out of the box — but you can add any CLI-based AI (Grok, Ollama, local models) in one line of config.
 
 Available as a Web UI, REST API, and MCP server. Under the hood it orchestrates CLI tools — no API keys required.
 
